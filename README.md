@@ -1,4 +1,4 @@
-# Chat_App
+# Web_Chat_App
 ## How to Run on local 📖
 
 - Must install PHP version (FOR WINDOWS) & (FOR MAC) Both
