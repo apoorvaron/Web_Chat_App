@@ -14,29 +14,42 @@ Step -1   Download Zip File
 
 Step -2   Unzip it & Rename it to "chatApp"
 
-Step -3   Put chatApp folder inside 
+Step -3   Put "chatApp" folder inside 
 
           /Applications/MAMP/htdocs/  folder  (FOR MAC)
           C:/xampp/htdocs/            folder  (FOR WINDOWS)
 
-Step -4   Change in /Applications/MAMP/htdocs/gForm/environment.php. file (FOR MAC)
+Step -4   Change in /Applications/MAMP/htdocs/chatApp/php/config.php. file (FOR MAC)
           
             <?php
-               $env_server = "localhost";
-               $env_username = "root";
-               $env_password = "root";
-               $env_database = "chatapp";
-               $env_port = "8889";
+ 
+              $hostname = "localhost";
+              $username = "root";
+              $password = "root";
+              $dbname = "chatapp";
+              $env_port = "8889";
+ 
+              $conn = mysqli_connect($hostname, $username, $password, $dbname,$env_port);
+              if(!$conn){
+                echo "Database connection error".mysqli_connect_error();
+              }
             ?>
 
-Step -4   Change in htdocs/gForm/environment.php. file (FOR WINDOWS)
-          
+
+Step -4   Change in htdocs/chatApp/php/config.php. file (FOR WINDOWS)
+
             <?php
-              $env_server = "localhost:3306";
-              $env_username = "root";
-              $env_password = "";
-              $env_database = "chatapp";
+ 
+              $hostname = "localhost:3306";
+              $username = "root";
+              $password = "";
+              $dbname = "chatapp";
               $env_port = "3306";
+ 
+              $conn = mysqli_connect($hostname, $username, $password, $dbname,$env_port);
+              if(!$conn){
+                echo "Database connection error".mysqli_connect_error();
+              }
             ?>
 
 Step -5   Setup database, Open 
