@@ -12,21 +12,21 @@
 
 Step -1   Download Zip File 
 
-Step -2   Unzip it & Rename it to "chatApp"
+Step -2   Unzip it & Rename it to "webchat"
 
-Step -3   Put "chatApp" folder inside 
+Step -3   Put "webchat" folder inside 
 
           /Applications/MAMP/htdocs/  folder  (FOR MAC)
           C:/xampp/htdocs/            folder  (FOR WINDOWS)
 
-Step -4   Change in /Applications/MAMP/htdocs/chatApp/php/config.php. file (FOR MAC)
+Step -4   Change in /Applications/MAMP/htdocs/webchat/php/config.php. file (FOR MAC)
           
             <?php
  
               $hostname = "localhost";
               $username = "root";
               $password = "root";
-              $dbname = "chatapp";
+              $dbname = "webchat";
               $env_port = "8889";
  
               $conn = mysqli_connect($hostname, $username, $password, $dbname,$env_port);
@@ -36,14 +36,14 @@ Step -4   Change in /Applications/MAMP/htdocs/chatApp/php/config.php. file (FOR 
             ?>
 
 
-Step -4   Change in htdocs/chatApp/php/config.php. file (FOR WINDOWS)
+Step -4   Change in /htdocs/webchat/php/config.php. file (FOR WINDOWS)
 
             <?php
  
               $hostname = "localhost:3306";
               $username = "root";
               $password = "";
-              $dbname = "chatapp";
+              $dbname = "webchat";
               $env_port = "3306";
  
               $conn = mysqli_connect($hostname, $username, $password, $dbname,$env_port);
@@ -59,13 +59,13 @@ Step -5   Setup database, Open
 
 Step -6   Create Database 
 
-Step -7   Database name  "chatapp"
+Step -7   Database name  "webchat"
 
-Step -8   Import the database from "/htdocs/chatApp/chatapp.sql" directory in database.
+Step -8   Import the database from "/htdocs/webchat/webchat.sql" directory in database.
 
 Step -9   Run in browser 
 
-          localhost:8888/chatApp/     (FOR MAMP)
-          localhost/chatApp/          (FOR XAMPP)
+          localhost:8888/webchat/     (FOR MAMP)
+          localhost/webchat/          (FOR XAMPP)
 
 
