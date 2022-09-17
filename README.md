@@ -8,6 +8,9 @@
 - Must install xampp (FOR WINDOWS) & MAMP (FOR MAC) 
 - Tutorial - https://www.youtube.com/watch?v=at19OmH2Bg4
 
+- Email used : apoorv.webchat@gmail.com
+- Live Site  : webchat.rf.gd
+
 -------*---------*----------
 
 Step -1   Download Zip File 
